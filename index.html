@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+    <title>Pebble FW</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1; user-scalable=no">
+
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+
+        background-image: -ms-linear-gradient(top, #959595 0%, #636464 100%);
+        background-image: -moz-linear-gradient(top, #959595 0%, #636464 100%);
+        background-image: -o-linear-gradient(top, #959595 0%, #636464 100%);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #959595), color-stop(1, #636464));
+        background-image: -webkit-linear-gradient(top, #959595 0%, #636464 100%);
+        background-image: linear-gradient(to bottom, #959595 0%, #636464 100%);
+
+        font-family: "Helvetica";
+        overflow-x: hidden;
+      }
+
+      #container {
+        width: 270px;
+        padding: 25px;
+        margin: auto;
+        background: #ccc;
+        border-radius: 10px;
+      }
+
+      #header img {
+        width: 175px;
+        margin: auto;
+        display: block;
+      }
+
+      #header h1 {
+        margin-bottom: -10px;
+      }
+
+      #header p {
+        margin-bottom: -5px;
+      }
+
+      #content {
+        margin-top: 20px;
+      }
+
+      .warning {
+        color: #bb0000;
+      }
+
+      .fw {
+        position: relative;
+        background: #ddd;
+        height: 55px;
+        border-radius: 10px;
+        width: 260px;
+        margin: auto;
+        margin-top: 15px;
+      }
+
+      .fw .channel {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          font-size: 22px;
+          font-weight: bold;
+      }
+
+      .fw .version {
+          position: absolute;
+          bottom: 5px;
+          left: 5px;
+          font-size: 18px;
+      }
+
+      .fw .download {
+          position: absolute;
+          bottom: 5px;
+          right: 5px;
+          font-size: 20px;
+      }
+
+      .fw .download img {
+        width: 32px;
+      }
+    </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <img src="res/icon.png">
+      <h1>Pebble Firmware</h1>
+      <p>
+        Want to try out some bleeding-edge Pebble firmware? You're in the right place!
+        Browse to this page on your phone and then hit the links below to install a new firmware.
+      </p>
+      <p class="warning">WARNING: I ACCEPT NO RESPONSIBILITY FOR ANY DAMAGE TO YOUR PEBBLE.</p>
+    </div>
+    <div id="content">
+      <div class="fw">
+        <span class="channel">Release</span>
+        <span class="version">v2.9.1</span>
+        <a class="download" href="https://pebblefw.s3.amazonaws.com/pebble/ev2_4/release-v2/pbz/Pebble-2.9.1-ev2_4.pbz"><img title="Includes bug fixes for iOS 8.2 and other improvements" src="res/download.png"></a>
+      </div>
+      <div class="fw">
+        <span class="channel">Beta</span>
+        <span class="version">v2.9-beta7</span>
+        <a class="download" href="https://pebblefw.s3.amazonaws.com/pebble/ev2_4/beta/pbz/Pebble-2.9-beta7-ev2_4.pbz"><img title="BETA
+Actionable notifications - supports Android Wear actions from 3rd party apps" src="res/download.png"></a>
+      </div>
+      <div class="fw">
+        <span class="channel">Nightly</span>
+        <span class="version">v2.2-rc1-186-g1a049fa</span>
+        <a class="download" href="https://pebblefw.s3.amazonaws.com/pebble/ev2_4/nightly/pbz/Pebble-2.1-ev2_4.pbz"><img title="Addresses a number of issues pertaining to BT reconnection and reliability and other bug fixes" src="res/download.png"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
